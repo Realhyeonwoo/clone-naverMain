@@ -1,0 +1,62 @@
+/* 기본 css는 없애기 */
+* {
+  box-sizing: border-box;
+}
+
+#header-center {
+  margin: 0 auto;
+  width: 1080px;
+}
+
+/* #header-center h1 */
+#header-search h1 {
+  width: 198px;
+  height: 48px;
+  display: inline-block;
+  background-image: url(./sp_search.svg);
+  background-position: -4px -10px;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+
+#header-search a {
+  text-decoration: none;
+}
+
+.blind {
+  display: none;
+}
+
+#header-search fieldset {
+  margin-left: 20px;
+  padding: 12px 0 12px 10px;
+  width: 520px;
+  height: 49px;
+  display: inline-block;
+  border: 2px solid #03cf5d; /* hex */
+  vertical-align: middle;
+}
+
+#header-search fieldset input {
+  border: none;
+  padding: 0;
+  outline: none;
+}
+
+#header-search fieldset button {
+  width: 49px;
+  height: 49px;
+  border: none;
+  padding: 0;
+  background: #03cf5d;
+}
+
+#search-image {
+  background-image: url(./sp_search.svg);
+  background-position: -3px -60px;
+  background-repeat: no-repeat;
+  width: 21px;
+  height: 21px;
+  display: inline-block;
+  margin: 14px;
+}
