@@ -3,11 +3,36 @@
   box-sizing: border-box;
 }
 
-#header-center {
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Dotum, "돋움", Helvetica, "Apple SD Gothic Neo", sans-s;
+}
+
+.center-align {
   margin: 0 auto;
   width: 1080px;
 }
 
+header {
+  height: 170px;
+}
+#header-top {
+  float: right;
+}
+
+#header-top span:first-child {
+  color: #888888;
+  letter-spacing: -1px;
+  font-size: 11px;
+  line-height: 22px;
+}
+
+#header-search {
+  clear: both;
+  padding-top: 20px;
+}
 /* #header-center h1 */
 #header-search h1 {
   width: 198px;
@@ -17,6 +42,8 @@
   background-position: -4px -10px;
   background-repeat: no-repeat;
   vertical-align: middle;
+  position: relative;
+  top: 3px;
 }
 
 #header-search a {
@@ -35,12 +62,16 @@
   display: inline-block;
   border: 2px solid #03cf5d; /* hex */
   vertical-align: middle;
+  position: relative;
 }
 
 #header-search fieldset input {
   border: none;
   padding: 0;
   outline: none;
+  vertical-align: top;
+  width: 405px;
+  height: 23px;
 }
 
 #header-search fieldset button {
@@ -49,6 +80,9 @@
   border: none;
   padding: 0;
   background: #03cf5d;
+  position: absolute;
+  right: -2px;
+  top: -2px;
 }
 
 #search-image {
@@ -59,4 +93,46 @@
   height: 21px;
   display: inline-block;
   margin: 14px;
+}
+
+#fixed {
+  position: fixed;
+  display: inline-block;
+  border: 3px solid red;
+  right: 0;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+}
+
+/* 유지보수로 인해 nth-chlid를 사용하는것은 자제하기! */
+nav li span:first-child {
+  height: 16px;
+  display: inline-block;
+  background-image: url(https://s.pstatic.net/static/www/img/uit/2019/sp_nav.png);
+  background-repeat: no-repeat;
+  margin-left: 14px;
+}
+
+nav li:first-child span:first-child {
+  width: 25px;
+  background-position: 0 -286px;
+  margin-left: 0;
+}
+
+nav li:nth-child(2) span:first-child {
+  width: 27px;
+  background-position: -279px -52px;
+}
+
+nav li:nth-child(3) span:first-child {
+  width: 40px;
+  background-position: -100px -182px;
 }
